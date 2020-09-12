@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 12, 2020 at 07:22 AM
+-- Generation Time: Sep 12, 2020 at 01:20 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -151,7 +151,8 @@ CREATE TABLE `transactions` (
 --
 
 INSERT INTO `transactions` (`id`, `invoice`, `user_id`, `produk_id`, `qty`, `total`, `nama_penerima`, `alamat_penerima`, `bukti_bayar`, `status`, `created_at`, `updated_at`) VALUES
-(5, 'INV1599885507', 2, 5, 5, 1510000, 'Fajri', 'Bandung', 'buktibayar/1599885507ing38.JPG', 0, '2020-09-11 21:38:27', '2020-09-11 21:38:27');
+(5, 'INV1599885507', 2, 5, 5, 1510000, 'Fajri', 'Bandung', 'buktibayar/1599885507ing38.JPG', 3, '2020-09-11 21:38:27', '2020-09-12 04:00:27'),
+(6, 'INV1599909575', 2, 6, 4, 2010000, 'Windi Ristianti', 'Bandung', 'buktibayar/15999095753e.JPG', 0, '2020-09-12 04:19:35', '2020-09-12 04:19:35');
 
 -- --------------------------------------------------------
 
@@ -258,7 +259,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
