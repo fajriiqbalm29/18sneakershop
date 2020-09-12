@@ -49,10 +49,17 @@
                             <h4>Your Order</h4>
                             <div class="checkout__order__products">Products <span>Total</span></div>
                             <ul>
-                                <li>{{$produk->nama_produk}}} <span>Rp. {{$produk->harga}}</span></li>
+                                @php
+                                    $harga = $produk->harga; 
+                                    $harga = number_format( $harga , 0 , '.' , '.' )
+                                @endphp
+                                <li>{{$produk->nama_produk}} <span>Rp. {{$harga}}</span></li>
                                 <li>Quantity <span>{{$qty}}</span></li>
                                 <li>Ongkos Kirim <span>Rp. 10.000</span></li>
                             </ul>
+                                @php
+                                    $total = number_format( $total , 0 , '.' , '.' )
+                                @endphp
                             <div class="checkout__order__total">Total <span>Rp. {{$total}}</span></div>
                             <button type="submit" class="site-btn">PLACE ORDER</button>
                         </div>

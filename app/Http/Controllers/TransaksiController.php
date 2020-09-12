@@ -69,7 +69,7 @@ class TransaksiController extends Controller
     {
         $data = Transaction::join('users','transactions.user_id','users.id')
                             ->join('products', 'transactions.produk_id', 'products.id')
-                            ->select('transactions.*', 'products.nama_produk')
+                            ->select('transactions.*', 'products.nama_produk','products.stok')
                             ->where('transactions.id',$id)
                             ->first();
 
@@ -88,6 +88,13 @@ class TransaksiController extends Controller
         $trans = Transaction::find($id);
 
         $trans->status = $request->status;
+
+        if ($trans->staus == 3) {
+
+            $kurang = $request->stok - $request->quantity;
+            $trans->stok = $kurang;
+            # code...
+        }
 
         $trans->save();
         return back();

@@ -39,9 +39,13 @@
                   <div class="form-group">
                     <input type="text" class="form-control text-primary" value="{{$data->nama_produk}}" disabled>
                   </div>
+                    <form action="{{route('transaksi.update',$data->id)}}" method="post">
+                    @csrf
+                    @method('put')
                    <label>Qty</label>
                   <div class="form-group">
-                    <input type="text" class="form-control text-primary" value="{{$data->qty}}" disabled>
+                    <input type="hidden" name="stok" value="{{$data->stok}}">
+                    <input type="text" class="form-control text-primary" value="{{$data->qty}}" name="quantity" disabled>
                   </div>
                    <label>Total</label>
                   <div class="form-group">
@@ -51,9 +55,7 @@
                   <div class="form-group">
                     <img style="max-width: 200px;" src="{{asset('/')}}{{$data->bukti_bayar}}">
                   </div>
-                  <form action="{{route('transaksi.update',$data->id)}}" method="post">
-                    @csrf
-                    @method('put')
+                    
                     <label>Status</label>
                     <div class="form-group">
                       <select class="form-control" name="status">

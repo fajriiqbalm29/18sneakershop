@@ -42,7 +42,11 @@
                     </div>
                     <div class="featured__item__text">
                         <h6><a href="{{route('detail',$produk->slug)}}">{{$produk->nama_produk}}</a></h6>
-                        <h5>Rp. {{$produk->harga}}</h5>
+                        @php
+                            $harga = $produk->harga; 
+                            $harga = number_format( $harga , 0 , '.' , '.' )
+                        @endphp
+                        <h5>Rp. {{$harga}}</h5>
                     </div>
                 </div>
             </div>
