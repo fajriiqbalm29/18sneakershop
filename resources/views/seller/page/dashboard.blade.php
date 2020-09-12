@@ -5,6 +5,11 @@
 @section('content')
 
         <div class="content">
+                @if(Session::has('alert-success'))
+                <div class="alert alert-success">
+                    <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
+                </div>
+                @endif
             <!-- Animated -->
             <div class="animated fadeIn">
                 <!-- Widgets  -->
