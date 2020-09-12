@@ -27,5 +27,5 @@ Screenshot Website
 ![dashboard](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/dashboardseller.png)
 ![produklist](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/produklist.png)
 ![kategori](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/kategori.png)
-![transaksi](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/transaksi.png)
+![transaksi](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/tranksaksi.png)
 ![report](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/report.png)
