@@ -19,3 +19,13 @@ Customer memiliki akses untuk :
 
 
 Screenshot Website
+![Beranda](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/beranda.png)
+![product](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/product.png)
+![detail](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/detailproduk.png)
+![checkout](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/checkout.png)
+![listtransaksi](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/listtransaksi.png)
+![dashboard](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/dashboardseller.png)
+![produklist](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/produklist.png)
+![kategori](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/kategori.png)
+![transaksi](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/transaksi.png)
+![report](https://github.com/fajriiqbalm29/18sneakershop/blob/master/public/screenshot/report.png)
